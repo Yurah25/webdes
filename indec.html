@@ -240,7 +240,7 @@
 
         .artikel-grid{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
             gap: 2rem;
         }
 
@@ -248,7 +248,7 @@
             background: rgba(255,255,255,0.1);
             border-radius: 15px;
             padding: 2rem;
-            backdrop-filter: blur(10px);
+    
             border: 1px solid rgba(255,255,255,0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -286,16 +286,12 @@
         .artikel-card .read-more:hover{
             color: #FBDB93;
         }
-
+        
         .kontak-section{
-            padding: 4rem 2rem;
+            padding: 4rem 20rem;
             background: linear-gradient(135deg, #ebd8ad, #f4e6c1);
         }
 
-        .kontak-container{
-            max-width: 1200px;
-            margin: 0 auto;
-        }
 
         .kontak-section h2{
             text-align: center;
@@ -305,16 +301,9 @@
             font-weight: 700;
         }
 
-        .kontak-grid{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: start;
-        }
-
         .kontak-info{
             background: white;
-            padding: 2rem;
+            padding: 5rem;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
@@ -334,12 +323,6 @@
             border-radius: 10px;
         }
 
-        .kontak-item i{
-            color: #059669;
-            margin-right: 1rem;
-            font-size: 1.2rem;
-        }
-
         .kontak-item div h4{
             color: #374151;
             font-size: 1rem;
@@ -349,74 +332,10 @@
         .kontak-item div p{
             color: #6b7280;
             font-size: 0.9rem;
+            padding-left: 10px;
+            padding-bottom: 25px;
         }
 
-        .kontak-form{
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .kontak-form h3{
-            color: #065f46;
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group{
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label{
-            display: block;
-            color: #374151;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .form-group input,
-        .form-group textarea{
-            width: 100%;
-            padding: 1rem;
-            border: 2px solid #e5e7eb;
-            border-radius: 8px;
-            font-family: 'Lexend', sans-serif;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus{
-            outline: none;
-            border-color: #059669;
-        }
-
-        .form-group textarea{
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .submit-btn{
-            background: linear-gradient(135deg, #059669, #047857);
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 8px;
-            font-family: 'Lexend', sans-serif;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            width: 100%;
-        }
-
-        .submit-btn:hover{
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(5,150,105,0.4);
-        }
-
-    
      @media (max-width:1366px){
         html{
             font-size: 75%;
@@ -432,6 +351,9 @@
         .user{
         stroke-width: 2.5px;
         scale: 1;
+    }
+    .kontak-section{
+            padding: 4rem 2rem;
     }
     .logo-foot{
         scale: 0.7;
@@ -546,9 +468,9 @@
     </section>
 
     <section class="kontak-section" id="kontak">
-        <div class="kontak-container">
+       
             <h2>Hubungi Kami</h2>
-            <div class="kontak-grid">
+            <div class="kontak">
                 <div class="kontak-info">
                     <h3>Informasi Kontak</h3>
                     
@@ -556,7 +478,7 @@
                         <i data-feather="map-pin"></i>
                         <div>
                             <h4>Alamat</h4>
-                            <p>Jl. Lingkungan Hijau No. 123<br>Jakarta Selatan, 12345</p>
+                            <p>Jl. Blater Jadi Hijau No. 7<br>Purbalingga, 13465</p>
                         </div>
                     </div>
                     
@@ -585,33 +507,6 @@
                     </div>
                 </div>
                 
-                <div class="kontak-form">
-                    <h3>Kirim Pesan</h3>
-                    <form>
-                        <div class="form-group">
-                            <label for="nama">Nama Lengkap</label>
-                            <input type="text" id="nama" name="nama" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subjek">Subjek</label>
-                            <input type="text" id="subjek" name="subjek" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="pesan">Pesan</label>
-                            <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda di sini..." required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">Kirim Pesan</button>
-                    </form>
-                </div>
-            </div>
         </div>
     </section>
     
@@ -631,6 +526,9 @@
                     <li><a href="#">Daur Ulang</a></li>
                     <li><a href="#">Penyuluhan</a></li>
                     <li><a href="#">Reboisasi</a></li>
+                    <li><a href="#">Konverso Air</a></li>
+                    <li><a href="#">Energi Terbarukan</a></li>
+                    <li><a href="#">Gaya Hidup Hijau</a></li>
                 </ul>
             </div>
         <div class="kontaknya">
@@ -638,6 +536,18 @@
                 <div class="email">
                  <i class="logo-foot" data-feather="mail"></i>
                 <p>info@lestaria.id</p>
+            </div>
+            <div class="email">
+                 <i class="logo-foot" data-feather="linkedin"></i>
+                <p>Lestariaco</p>
+            </div>
+            <div class="email">
+                 <i class="logo-foot" data-feather="instagram"></i>
+                <p>@Lestaria_Foundation</p>
+            </div>
+            <div class="email">
+                 <i class="logo-foot" data-feather="facebook"></i>
+                <p>Lestaria Foundation</p>
             </div>
             
                 <div class="telp">
