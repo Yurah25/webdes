@@ -64,7 +64,19 @@
         font-size: 1.25rem;
         position: relative;
     }
-
+    .pohon{
+     
+     background-color: #B2CD9C;
+     border-bottom: 5px solid #328E6E;
+     flex-wrap: nowrap;
+   }
+    .vanila{
+     padding-top: 30px;
+     padding-bottom: 30px;
+  align-items: flex-end;
+     display: flex;
+     max-width: 25%;
+     }
     nav a::after{
         content: '';
         position: absolute;
@@ -110,11 +122,11 @@
         align-items: center;
         justify-content: center;
         padding: 4rem;
-        background-image: url('/static/image/hero.jpg');
+        background-image: url("C:/Users/DELL/Downloads/webdes-main (2)/webdes-main/static/image/hero.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;        
-        border-bottom: 5px solid #023023;
+        
     }
     img{
         max-width: 100%;
@@ -207,14 +219,14 @@
     .foot{
         padding: 1rem;
         align-items: center;
-        background: linear-gradient(135deg, #0a3025, #023023);
-        border-top: 1px solid rgb(2, 78, 10);
-        color: #D2D0A0;
-        font-weight: 600;
+        background:  #065f46;
+        color: #D2D3A0;
+        font-weight: 400;
         font-size: 1.2rem;
         text-align: center;
 
     }
+
     .foot span{
         color: #DDA853;
     }
@@ -223,6 +235,7 @@
             padding: 4rem 2rem;
             background: linear-gradient(135deg, #065f46, #047857);
             min-height: 100vh;
+            border-bottom: 5px solid #FFF1D5;
         }
 
         .artikel-container{
@@ -244,7 +257,7 @@
             gap: 2rem;
         }
 
-        .artikel-card{
+       .artikel-card{
             background: rgba(255,255,255,0.1);
             border-radius: 15px;
             padding: 2rem;
@@ -252,6 +265,7 @@
             border: 1px solid rgba(255,255,255,0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
 
         .artikel-card:hover{
             transform: translateY(-5px);
@@ -290,6 +304,8 @@
         .kontak-section{
             padding: 4rem 20rem;
             background: linear-gradient(135deg, #ebd8ad, #f4e6c1);
+            padding-bottom: 7rem;
+            border-bottom: 5px solid #BBD8A3;
         }
 
 
@@ -342,6 +358,11 @@
         }
     }
     @media (max-width: 768px){
+        
+         .vanila{
+     max-width: 40%;
+     }
+
         html{
             font-size: 62.5%;
         }
@@ -362,6 +383,14 @@
         
     }
     @media (max-width:450px){
+        .vanila{
+     max-width: 100%;
+     text-align: center;
+     }
+      .pohon{
+
+       padding-bottom: 5rem;
+      }
         html{
             font-size: 55%;
         }
@@ -419,7 +448,7 @@
         <main class="item">
             <h1>BERSAMA KAMI</h1>
             
-            <p>Mencipta kehidupan yang harmoni dengan menjaga lingkungan tetap asri</p>
+            <p>mencipta kehidupan yang harmoni dengan menjaga lingkungan yang asri</p>
         </main>
     </section>
 
@@ -508,8 +537,21 @@
                 </div>
                 
         </div>
+                 
     </section>
-    
+    <section class="pohon" >
+         <h2 style = "position: relative; top: 3rem;text-align:center; " >Tentang Kami</h2>
+                <div>
+                <div>
+                    <img  class = "vanila" src = "C:/Users/DELL/Downloads/webdes-main (2)/webdes-main/static/image/vanilla-pods-stick-orchid-flower-leaves-isolated-on-transparent-background-free.png">
+                    
+               </div>  
+               <div class = "vanila">
+                                      <p>Lestaria adalah organisasi masyarakat yang berfokus pada pelestarian lingkungan hidup, aksi sosial,<br>serta gaya hidup sehat. Organisasi ini dibangun pada tahun 2006 oleh CEO Yusuf Raffi Ahmad, yang khawatir dengan kondisi lingkungan yangkian memburuk. Kedepanya, Lestaria akan mengajak seluruh elemen masyarakat dari berbagai bidang, mulai dari agrikultur bahkan sampai industri, untuk bersinergi bersama menciptakan lingkungan yang sehat bagi umat manusia</p>
+                </div>
+</div>
+    </section>
+
     <footer id="kontak">
         <div class="kontak-deskripsi-topik">
             
@@ -526,9 +568,10 @@
                     <li><a href="#">Daur Ulang</a></li>
                     <li><a href="#">Penyuluhan</a></li>
                     <li><a href="#">Reboisasi</a></li>
-                    <li><a href="#">Konverso Air</a></li>
+                    <li><a href="#">Konservasi Air</a></li>
                     <li><a href="#">Energi Terbarukan</a></li>
                     <li><a href="#">Gaya Hidup Hijau</a></li>
+                    <li><a href="#">Lainya...</a></li>
                 </ul>
             </div>
         <div class="kontaknya">
